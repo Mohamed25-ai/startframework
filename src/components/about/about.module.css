@@ -1,0 +1,38 @@
+.about{
+    height: 90vh;
+    background-color: #1ABC9C;
+}
+.starAboutIcon{
+    position: relative;
+}
+.starAboutIcon::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    padding-left: 10px;
+    background-color: white;
+    left: 50%;
+    margin-left:30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.starAboutIcon::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    right: 50%;
+    margin-right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
