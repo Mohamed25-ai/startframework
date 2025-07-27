@@ -1,4 +1,4 @@
-import { createBrowserRouter, NavLink, Outlet, Link } from 'react-router-dom';
+import { createHashRouter, NavLink, Outlet, Link } from 'react-router-dom';
 import Home from '../home/home';
 import About from '../about/about';
 import Contact from '../contact/contact';
@@ -10,7 +10,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { useState,useEffect } from 'react';
 import '../../index.css';
 
-export const allRoutes = createBrowserRouter([
+export const allRoutes = createHashRouter([
     {
         path: '', element: <Navbar />, children: [
             { index: true, element: <Home /> },
